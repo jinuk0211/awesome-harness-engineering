@@ -34,42 +34,44 @@ Claude Code의 핵심 제약은 연산량보다 컨텍스트 윈도우 크기다
 클로드 코드의 구성요소
 -------------------
 1. User
-사용자는 프롬프트 입력, 권한 승인, 결과 검토를 담당한다.
+사용자는 프롬프트 입력, 권한 승인, 결과 검토를 담당
 중요 작업은 사용자 확인을 거쳐야 한다.
-(별도 ts 파일보다는 전체 시스템 상위 개념 역할)
+(별도 typescript 파일이라기 보다는 전체 시스템 상위 개념 역할)
 
 2. Interfaces
-CLI, SDK, IDE, 브라우저 등 여러 인터페이스가 존재한다.
-모든 인터페이스는 동일한 내부 루프로 연결된다.
-즉 UI만 다르고 핵심 실행 구조는 같다.
+CLI, SDK, IDE, 브라우저 등 여러 인터페이스가 존재
+모든 인터페이스는 동일한 내부 루프로 연결
+즉 UI만 다르고 핵심 실행 구조는 같다
 
 3. Agent loop — query.ts
-핵심 실행 흐름은 query.ts의 queryLoop()에서 구현된다.
-모델 호출 → tool 실행 → 결과 수집을 반복한다.
-Claude Code orchestration의 중심 엔진이다.
+핵심 실행 흐름은 query.ts의 queryLoop()에서 실행
+모델 호출 → tool 실행 → 결과 수집을 반복
+Claude Code orchestration의 핵심
 
 4. Permission system — permissions.ts, types/hooks.ts
-권한 평가는 permissions.ts에서 deny-first 방식으로 처리된다.
-types/hooks.ts는 hook 기반 interception을 담당한다.
+권한 평가는 permissions.ts에서 deny-first 방식으로 처리
+types/hooks.ts는 hook 기반 interception을 담당
 위험 행동은 차단하거나 사용자 승인을 요구한다.
 
 5. Tools — tools.ts
-도구 조합은 tools.ts의 assembleToolPool()이 담당한다.
-최대 54개 내장 도구와 MCP 도구를 통합한다.
-실제 에이전트 기능 대부분이 여기서 제공된다.
+도구 조합은 tools.ts의 assembleToolPool()이 실행
+최대 54개 내장 도구와 MCP 도구를 통합
+실제 에이전트 기능 대부분이 여기서 제공
 
 6. State & persistence — sessionStorage.ts, history.ts
-sessionStorage.ts는 JSONL 세션 기록 저장을 담당한다.
-history.ts는 전역 프롬프트 히스토리를 관리한다.
+sessionStorage.ts는 JSONL 세션 기록 저장을 담당
+history.ts는 global 프롬프트 히스토리를 관리
 장기 상태와 작업 맥락 유지 역할을 한다.
 
 7. Execution environment — shouldUseSandbox.ts
-shouldUseSandbox.ts는 샌드박스 사용 여부를 결정한다.
-쉘 실행, 파일 접근, 웹 요청 등이 이 계층에서 수행된다.
-즉 외부 세계와 실제 연결되는 실행 환경이다.
+shouldUseSandbox.ts는 샌드박스 사용 여부를 결정
+쉘 실행, 파일 접근, 웹 요청 fetch, MCP 호출 등이 이 계층에서 수행됨
+즉 외부환경과 실제 연결되는 실행 환경
 
 <img width="793" height="291" alt="image" src="https://github.com/user-attachments/assets/72c05446-6069-47b1-ba74-02e344d642bc" />
 
+Layered Subsystem Decomposition
+------------------
 ### 1. Surface layer — `src/entrypoints/`, `src/screens/`, `src/components/`
 
 사용자 인터페이스 계층이다.
