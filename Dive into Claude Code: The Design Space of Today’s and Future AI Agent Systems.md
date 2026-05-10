@@ -502,6 +502,8 @@ subagent는 독립 context window 안에서 실행
 
 주제: subagent
 =======================
+<img width="793" height="346" alt="image" src="https://github.com/user-attachments/assets/bdda813c-6534-458f-a497-1a70f487015c" />
+
 ### 1. Agent Tool — `AgentTool.tsx`
 
 AgentTool은 Claude가 subagent를 생성해 작업을 위임하는 메타-tool
