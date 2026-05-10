@@ -59,7 +59,9 @@ stdio, HTTP, WebSocket, SSE 등 다양한 transport를 지원
 ### 3. Plugins — `utils/plugins/schemas.ts`, `pluginLoader.ts`
 
 Plugin은 배포 포맷 + 확장 패키징 시스템 역할
+
 ⭐⭐commands, agents, skills, hooks, MCP, settings 등 10개 component 타입을 포함할 수 있다⭐⭐
+
 즉 하나의 plugin이 Claude Code 여러 subsystem을 동시에 확장 가능하다
 
 ---
@@ -67,7 +69,9 @@ Plugin은 배포 포맷 + 확장 패키징 시스템 역할
 ### 4. Skills — `loadSkillsDir.ts`
 
 Skill은 ⭐`SKILL.md`⭐ + YAML frontmatter 기반 instruction 패키지다
+
 allowed tools, model override, execution mode, hooks 등을 정의할 수 있다
+
 ⭐⭐실행 시 SkillTool이 skill instruction을 context에 주입한다⭐⭐
 
 ---
@@ -75,7 +79,9 @@ allowed tools, model override, execution mode, hooks 등을 정의할 수 있다
 ### 5. Hooks — `coreTypes.ts`, `types/hooks.ts`
 
 총 27개 hook event가 존재
+
 ⭐⭐permission flow, session lifecycle, context management, subagent coordination 등을 interception 가능⭐⭐
+
 hook은 tool call 차단·수정·retry guidance 제공까지 수행할 수 있다
 
 ---
@@ -117,6 +123,7 @@ feature flag, environment, user type에 따라 달라진다
 
 확장 방식마다 context 비용이 다르기 때문으로
 ⭐하나의 시스템으로 통합하면 lightweight extension과 heavyweight tool integration을 동시에 효율적으로 처리하기 어려움⭐
+
 즉 “표현력 vs context cost” tradeoff 때문에 분리된 구조 = 최근 마크다운 파일, html 파일, 여러 구조에서의 tradeoff 글
 
 ---
