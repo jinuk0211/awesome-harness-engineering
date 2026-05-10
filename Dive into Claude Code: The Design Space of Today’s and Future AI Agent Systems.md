@@ -1,6 +1,7 @@
-실제 클로드 코드 분석 - LLM을 둘러싸고 있는 하네스에 관해
+실제 클로드 코드 분석
 ================================================
-https://arxiv.org/html/2604.14228v1
+LLM을 둘러싸고 있는 하네스에 관해 - https://arxiv.org/html/2604.14228v1
+
 openclaw와 claude code, 최근의 hermes와 같이 단순히 tool calling, mcp를 넘어 하네스를 통해 agentic workflow를 구축해 놓은 프로젝트가 많은데 그 중 하나인 claude code에서의 아키텍쳐에 대해 소개해놓은 논문
 
 클로드 코드가 무엇인지에 대한 안트로픽 공식문서 묘사 ->
