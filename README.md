@@ -32,6 +32,9 @@ Agent harness 및 관련 LLM 에이전트 시스템 논문 모음집.
 | **From Context to Skills: Can LMs Learn from Context Skillfully?** | context → skill 학습 가능성 탐구 |
 | **COS-PLAY: Co-Evolving LLM Decision and Skill Bank Agents** | 의사결정 에이전트와 skill bank 공동 진화 |
 | **Memento-Skills: Let Agents Design Agents** | 에이전트가 에이전트를 설계 |
+| **Organizing, Orchestrating, and Benchmarking Agent Skills at Ecosystem Scale** | 생태계 규모의 skill 조직·오케스트레이션·벤치마크 |
+| **SR-Agents: Skill Retrieval Augmentation for Agentic AI** | 에이전트 AI를 위한 skill 검색 증강 |
+| **SkillRAE: Agent Skill-Based Context Compilation for Retrieval-Augmented Execution** | skill 기반 context 컴파일로 검색 증강 실행 |
 
 ---
 
@@ -41,6 +44,7 @@ Agent harness 및 관련 LLM 에이전트 시스템 논문 모음집.
 |------|------|
 | **MemFactory: Unified Inference & Training Framework for Agent Memory** | 에이전트 메모리 통합 프레임워크 |
 | **Memory Intelligence Agent** | 메모리 지능 에이전트 |
+| **NanoResearch: Co-Evolving Skills, Memory, and Policy for Personalized Research Automation** | skill·메모리·정책 공동 진화 기반 개인화 연구 자동화 |
 | **Scaling Long-Horizon LLM Agent via Context-Folding** | context folding으로 장기 에이전트 스케일링 |
 | **TACO: Self-Evolving Framework via Observational Context Compression** | 관찰 context 압축 자동 진화 |
 
@@ -100,8 +104,6 @@ Agent harness 및 관련 LLM 에이전트 시스템 논문 모음집.
 | **KnowRL: Boosting LLM Reasoning via RL with Minimal-Sufficient Knowledge** | 최소 충분 지식으로 RL 추론 강화 |
 | **Skill0: In-Context Agentic RL for Skill Internalization** | (→ Skills 섹션 중복) |
 
-
-
 ---
 
-> **총 42편** · 최종 업데이트: 2025-05
+> **총 46편** · 최종 업데이트: 2025-05
