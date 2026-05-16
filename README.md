@@ -10,6 +10,8 @@ Agent harness 및 관련 LLM 에이전트 시스템 논문 모음집.
 |------|------|-------|
 | **THE LAST HARNESS YOU'LL EVER BUILD** | harness 설계의 종합 비전 | [2604.21003](https://arxiv.org/abs/2604.21003) |
 | **Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses** | observability 기반 harness 자동 진화 | [2604.25850](https://arxiv.org/abs/2604.25850) |
+| **Continual Harness: Online Adaptation for Self-Improving Foundation Agents** | 체화 에이전트용 reset-free 자기개선 harness (Gemini Plays Pokémon) | [2605.09998](https://arxiv.org/abs/2605.09998) |
+| **Harnessing Agentic Evolution** | TODO: arXiv ID 미확인 | — |
 | **Meta-Harness: End-to-End Optimization of Model Harnesses** | harness 전 구간 최적화 | [2603.28052](https://arxiv.org/abs/2603.28052) |
 | **Meta Context Engineering via Agentic Skill Evolution** | 에이전트 skill 진화를 통한 context engineering | [2601.21557](https://arxiv.org/abs/2601.21557) |
 | **Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering** | memory·skill·protocol·harness 통합 리뷰 | [2604.08224](https://arxiv.org/abs/2604.08224) |
@@ -47,6 +49,7 @@ Agent harness 및 관련 LLM 에이전트 시스템 논문 모음집.
 | **NanoResearch: Co-Evolving Skills, Memory, and Policy for Personalized Research Automation** | skill·메모리·정책 공동 진화 기반 개인화 연구 자동화 | [2605.10813](https://arxiv.org/abs/2605.10813) |
 | **Scaling Long-Horizon LLM Agent via Context-Folding** | context folding으로 장기 에이전트 스케일링 | [2510.11967](https://arxiv.org/abs/2510.11967) |
 | **TACO: Self-Evolving Framework via Observational Context Compression** | 관찰 context 압축 자동 진화 | [2604.19572](https://arxiv.org/abs/2604.19572) |
+| **δ-mem: Efficient Online Memory for Large Language Models** | delta-rule 기반 온라인 연상 메모리로 frozen backbone 보강 | [2605.12357](https://arxiv.org/abs/2605.12357) |
 
 ---
 
@@ -71,6 +74,7 @@ Agent harness 및 관련 LLM 에이전트 시스템 논문 모음집.
 | **GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic RL** | 경쟁 프로그래밍 grandmaster 수준 달성 | [2604.02721](https://arxiv.org/abs/2604.02721) |
 | **Scaling Test-Time Compute for Agentic Coding** | 에이전트 코딩의 테스트-타임 컴퓨트 스케일링 | [2604.16529](https://arxiv.org/abs/2604.16529) |
 | **Terminal Agents Suffice for Enterprise Automation (StarShell)** | 터미널 에이전트로 엔터프라이즈 자동화 충분 | [2604.00073](https://arxiv.org/abs/2604.00073) |
+| **Is Grep All You Need? How Agent Harnesses Reshape Agentic Search** | grep vs. 벡터 검색 비교, harness 아키텍처가 검색 성능에 미치는 영향 | [2605.15184](https://arxiv.org/abs/2605.15184) |
 
 ---
 
@@ -104,4 +108,12 @@ Agent harness 및 관련 LLM 에이전트 시스템 논문 모음집.
 
 ---
 
-> **총 45편** · 최종 업데이트: 2025-05
+## 🔭 AGI & Long-term Vision
+
+| 논문 | 설명 | arXiv |
+|------|------|-------|
+| **agentic AI as a foreseeable pathway to AGI** | TODO: arXiv ID 미확인 | — |
+
+---
+
+> **총 50편** · 최종 업데이트: 2026-05
